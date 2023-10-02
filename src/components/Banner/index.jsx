@@ -9,6 +9,7 @@ function Banner({ imageSource, showText = true, variant }) {
     return (
         <div className={bannerClass}> 
             <img className="banner__image" src={imageSource} alt="Nature" />
+            {/* Si showText est vrai, alors le texte s'affiche */} 
             {showText && <p className="banner__text">Chez vous, partout et ailleurs</p>}
         </div>
     );

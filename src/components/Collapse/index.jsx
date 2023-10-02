@@ -25,6 +25,7 @@ const Collapse = ({ categorie, title, content, className = '' }) => {
               />
           </div>
           
+          {/* On vérifie si le contenu est un tableau ou un texte simple */}
           {Array.isArray(content) ? (
             <ul className={`${categorie}__informations__card__info ${isOpen ? "show" : ""}`}>
               {content.map((equipment, index) => (

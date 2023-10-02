@@ -1,0 +1,64 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+
+.header{
+    @include center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link a{
+        color: $color-primary;
+        font-family: 'Montserrat';
+        margin-left: 70px;
+        text-decoration: none;
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .header{
+        padding: 30px 50px;
+        &__link a{
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header{
+        padding: 20px 20px;
+        &__logo{
+            width: 150px;
+        }
+        &__link{
+            text-align: end;
+            width: 240px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .header__link a{
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header{
+        padding: 20px 20px;
+        &__logo{
+            width: 120px;
+        }
+        &__link{
+            width: 190px;
+            font-size: 10px;
+        }
+        .header__link a{
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+    }
+}

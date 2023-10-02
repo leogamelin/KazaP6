@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.logement__hostname {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    .logement__name {
+      text-align: right;
+      justify-self: end;
+      color: $color-primary;
+      font-family: "Montserrat";
+      & p {
+        font-size: 20px;
+        font-weight: 500;
+        align-self: flex-start;
+        margin: 0;
+        padding-top: 8px;
+      }
+    }
+  }
+  .disk {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin-left: 10px;
+  }

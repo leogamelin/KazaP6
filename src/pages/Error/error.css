@@ -1,0 +1,47 @@
+.error h1, .error p, .error a {
+  margin: 80px 0;
+  color: #FF6060;
+  text-align: center;
+  font-family: "Montserrat";
+}
+.error h1 {
+  font-size: 300px;
+  font-weight: 700;
+}
+.error p {
+  margin: 150px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+.error a {
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 830px) {
+  .error h1 {
+    font-size: 150px;
+  }
+  .error p {
+    margin: 100px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 425px) {
+  .error h1 {
+    margin-top: 100px;
+    line-height: 200px;
+    font-size: 100px;
+  }
+  .error p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .error a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=error.css.map */

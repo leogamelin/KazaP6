@@ -1,0 +1,103 @@
+@import '../../sass/mixins.scss';
+
+.cards__container{
+  @include center;
+    .cards {
+        list-style: none;
+        display: flex;
+        border-radius: 25px;
+        background-color: #f6f6f6;
+        padding: 50px 2%;
+        margin-bottom: 43px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .card {
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 340px;
+          width: 340px;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: "Montserrat";
+          color: white;
+          border-radius: 10px;
+          margin: 0px 20px 50px 20px;
+          transition: box-shadow 0.3s ease-out;
+          & a {
+            display: block;
+            height: inherit;
+          }
+        }
+      }
+      
+      .card img {
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: brightness(65%);
+      }
+      .card span {
+        color: white;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+      
+      .card:hover {
+        box-shadow: grey 5px 5px 10px;
+      }
+
+      @media screen and (max-width: 1050px) {
+        .cards .card{
+          width: 280px;
+          height: 280px;
+          margin: 0 10px 30px 10px;
+        }
+      }
+
+      @media screen and (max-width: 880px) {
+        .cards .card{
+          width: 260px;
+          height: 260px;
+        }
+      }
+
+      
+}
+
+@media screen and (max-width: 830px) {
+  .cards__container{
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .cards__container{
+    padding: 10px 50px;
+    .cards{
+      background-color: white;
+      padding: 30px 2%;
+      .card{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .cards__container{
+    padding: 20px 20px;
+  }
+}
+

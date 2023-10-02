@@ -1,0 +1,130 @@
+@import '../../sass/mixins.scss';
+
+// Banner -- About
+.banner{
+    margin: auto;
+    padding: 0px 120px;
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__image{
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    &__text{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        position: absolute;
+        color: white;
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 830px) {
+    .banner{
+      padding: 0px 50px;
+    }
+  } 
+
+  @media (max-width: 580px) {
+    .banner{
+      padding: 0px 20px;
+    }
+  } 
+
+// _________________________________________________
+// Banner -- Home
+// _________________________________________________
+
+.banner__home{
+    margin: auto;
+    padding: 0px 120px;
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner__image{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .banner__text{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        position: absolute;
+        color: white;
+        font-size: 300%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .banner__home{
+        padding: 0 120px;
+        .banner__image{
+            height: 190px;
+        }
+        .banner__text{
+            font-size: 250%;
+            font-weight: 500;
+          }
+    }
+  } 
+
+@media (max-width: 830px) {
+    .banner__home{
+        padding: 0 50px;
+        .banner__image{
+            height: 160px;
+        }
+        .banner__text{
+            font-size: 220%;
+            margin: 0 80px;
+          }
+    }
+} 
+
+@media (max-width: 580px) {
+    .banner__home{
+        padding: 0 20px;
+        .banner__image{
+            height: 150px;
+        }
+        .banner__text{
+            margin: 0 50px;
+          }
+    }
+} 
+
+@media (max-width: 425px) {
+    .banner__home{
+        padding: 0 20px;
+        .banner__image{
+            height: 130px;
+        }
+        .banner__text{
+            font-size: 200%;
+            margin: 0 40px 0 40px;
+          }
+    }
+} 
+
+@media (max-width: 372px) {
+    .banner__home{
+        padding: 0 20px;
+        .banner__text{
+            font-size: 170%;
+            margin: 0 32px 0 32px;
+          }
+    }
+}
+
+

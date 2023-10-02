@@ -1,0 +1,88 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+
+.logement__container{
+    @include center;
+    padding-top: 0;
+    .logement__presentation{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .logement__titre{
+            color: $color-primary;
+            font-family: "Montserrat";
+            h1{
+                margin: 0;
+                font-size: 220%;
+                font-weight: 500;
+            }
+            p{
+                margin-top: 10px;
+                font-size: 120%;
+                font-weight: 500;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .logement__container{
+        padding: 40px 80px;
+        .logement__presentation .logement__titre h1{
+            font-size: 190%;
+        }
+    }
+    .logement__tag li{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 830px) {
+    .logement__container{
+        padding: 30px  50px;
+        .logement__presentation{
+            flex-direction: column;
+            margin-bottom: 10px;
+            .logement__host{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin-top: 15px;
+                .stars{
+                    width: 150px;
+                    margin-top: 15px;
+                }
+            }
+            .logement__titre{
+                margin-top: 5px;
+                p{
+                    font-size: 140%;
+                }
+                .logement__tag li{
+                    font-size: 80%;
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .logement__container{
+        padding: 20px  20px;
+        .about__informations{
+            flex-direction: column;
+            .about__logement{
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,59 @@
+@import '../../sass/variables.scss';
+
+.error {
+    h1, p, a {
+      margin: 80px 0;
+      color: $color-primary;
+      text-align: center;
+      font-family: "Montserrat";
+    }
+  
+    h1 {
+      font-size: 300px;
+      font-weight: 700;
+    }
+  
+    p {
+      margin: 150px 0;
+      font-size: 40px;
+      font-weight: 500;
+    }
+  
+    a {
+      font-size: 22px;
+      font-weight: 500;
+      text-decoration: underline;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+
+@media (max-width: 830px) { 
+    .error{
+        & h1{
+            font-size: 150px;
+        }
+        & p{
+          margin: 100px;
+          font-size: 25px;
+        }
+    }
+}
+@media (max-width: 425px) { 
+    .error{
+        & h1{
+            margin-top: 100px;
+            line-height: 200px;
+            font-size: 100px;
+        }
+        & p{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        & a{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

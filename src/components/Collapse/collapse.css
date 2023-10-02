@@ -1,0 +1,112 @@
+.about__collapse {
+  margin: auto;
+  padding: 30px 200px;
+}
+.about__collapse .about__informations__card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin: 25px 0;
+  overflow: hidden;
+}
+.about__collapse .about__informations__card__title {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+.about__collapse .about__informations__card__title img {
+  transition: transform 0.2s ease-in-out;
+}
+.about__collapse .about__informations__card__title img.rotate {
+  transform: rotate(-180deg);
+}
+.about__collapse .about__informations__card__info {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: min-height 0.2s ease-in-out;
+}
+.about__collapse .about__informations__card__info.show {
+  background-color: #F6F6F6;
+  max-height: 500px;
+  padding: 20px;
+  color: #FF6060;
+  font-family: "Montserrat";
+  font-size: 22px;
+  line-height: 25px;
+}
+.about__collapse .about__informations__card__equipment {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+  .about__collapse {
+    padding: 30px 120px;
+  }
+}
+@media (max-width: 830px) {
+  .about__collapse {
+    padding: 50px;
+  }
+}
+@media (max-width: 580px) {
+  .about__collapse {
+    padding: 15px;
+  }
+}
+.about__informations {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.about__informations .about__logement {
+  width: 47%;
+}
+.about__informations .about__logement .about__informations__card {
+  border: 1px solid #e0e0e0;
+  margin: 25px 0;
+  overflow: hidden;
+}
+.about__informations .about__logement .about__informations__card__title {
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+.about__informations .about__logement .about__informations__card__title img {
+  transition: transform 0.2s ease-in-out;
+}
+.about__informations .about__logement .about__informations__card__title img.rotate {
+  transform: rotate(-180deg);
+}
+.about__informations .about__logement .about__informations__card__info {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: min-height 0.2s ease-in-out;
+}
+.about__informations .about__logement .about__informations__card__info.show {
+  background-color: #F6F6F6;
+  max-height: 500px;
+  padding: 20px;
+  color: #FF6060;
+  font-family: "Montserrat";
+  font-size: 22px;
+  line-height: 30px;
+  list-style: none;
+}
+.about__informations .about__logement .about__informations__card__equipment {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=collapse.css.map */
